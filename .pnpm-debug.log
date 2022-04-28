@@ -1,0 +1,35 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "Command failed with ENOENT: @toast-ui/chart\nspawn @toast-ui/chart ENOENT",
+      "code": "ENOENT",
+      "stack": "Error: Command failed with ENOENT: @toast-ui/chart\nspawn @toast-ui/chart ENOENT\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)\n    at onErrorNT (internal/child_process.js:465:16)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+    }
+  },
+  "2 error pnpm": {
+    "errno": -2,
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "syscall": "spawn @toast-ui/chart",
+    "path": "@toast-ui/chart",
+    "spawnargs": [],
+    "originalMessage": "spawn @toast-ui/chart ENOENT",
+    "shortMessage": "Command failed with ENOENT: @toast-ui/chart\nspawn @toast-ui/chart ENOENT",
+    "command": "@toast-ui/chart",
+    "escapedCommand": "\"@toast-ui/chart\"",
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "prefix": "/Users/Sean/Documents/Development/Svelte UI Elements/toastbarchart",
+    "err": {
+      "name": "pnpm",
+      "message": "Command failed with ENOENT: @toast-ui/chart\nspawn @toast-ui/chart ENOENT",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: Command failed with ENOENT: @toast-ui/chart\nspawn @toast-ui/chart ENOENT\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)\n    at onErrorNT (internal/child_process.js:465:16)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+    }
+  }
+}
