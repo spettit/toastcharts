@@ -6,14 +6,16 @@
 		categories: ['one', 'two'],
 		series: [
 			{
-				name: 'amount',
+				name: 'amaount',
 				data: [1, 2]
 			}
 		]
 	};
 
 	const options = {
-		chart: { width: 700, height: 400 }
+		chart: { title: 'Average Temperature', width: 900, height: 400 },
+		xAxis: { pointOnColumn: false, title: { text: 'Month' } },
+		yAxis: { title: 'Temperature (Celsius)' }
 	};
 
 	onMount(async () => {
@@ -21,8 +23,8 @@
 		const ChartImport = await import('@toast-ui/chart');
 		console.log(ChartImport);
 		const Chart = ChartImport.default;
-		console.log(Chart.barChart);
-		chart = Chart.barChart({
+		console.log(Chart.areaChart);
+		chart = Chart.areaChart({
 			el,
 			data,
 			options
