@@ -1,6 +1,6 @@
 {
-  "name": "toastbarchart",
-  "version": "0.0.1",
+  "name": "toastcharts",
+  "version": "0.0.2",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -10,12 +10,18 @@
     "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
+  "exports": {
+    "./AreaChart.svelte": "./AreaChart.svelte",
+    "./BarChart.svelte": "./BarChart.svelte"
+  },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.44.0"
+    "svelte": "^3.44.0",
+    "svelte2tsx": "^0.5.9",
+    "typescript": "^4.6.4"
   },
   "type": "module",
   "dependencies": {
