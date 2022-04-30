@@ -12,6 +12,8 @@
 		]
 	};
 
+	let chart;
+
 	const options = {
 		chart: { title: 'Average Temperature', width: 900, height: 400 },
 		xAxis: { pointOnColumn: false, title: { text: 'Month' } },
@@ -21,9 +23,7 @@
 	onMount(async () => {
 		const el = document.getElementById('chart-area');
 		const ChartImport = await import('@toast-ui/chart');
-		console.log(ChartImport);
 		const Chart = ChartImport.default;
-		console.log(Chart.areaChart);
 		chart = Chart.areaChart({
 			el,
 			data,

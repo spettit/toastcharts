@@ -12,6 +12,8 @@
 		]
 	};
 
+	let chart;
+
 	const options = {
 		chart: { width: 700, height: 400 }
 	};
@@ -19,9 +21,7 @@
 	onMount(async () => {
 		const el = document.getElementById('chart-area');
 		const ChartImport = await import('@toast-ui/chart');
-		console.log(ChartImport);
 		const Chart = ChartImport.default;
-		console.log(Chart.barChart);
 		chart = Chart.barChart({
 			el,
 			data,
