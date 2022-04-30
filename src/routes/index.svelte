@@ -1,6 +1,6 @@
 <script>
-	import ToastBarChart from '$lib/ToastBarChart.svelte';
-	import ToastAreaChart from '../lib/ToastAreaChart.svelte';
+	import BarChart from '$lib/BarChart.svelte';
+	import AreaChart from '../lib/AreaChart.svelte';
 
 	import areaChartData from '../data/areaChartData';
 	import barChartData from '../data/barChartData';
@@ -8,5 +8,5 @@
 
 <h1>Toast Chart</h1>
 
-<ToastBarChart data={barChartData} />
-<ToastAreaChart data={areaChartData} />
+<BarChart data={barChartData} />
+<AreaChart data={areaChartData} />
